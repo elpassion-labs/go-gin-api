@@ -1,0 +1,12 @@
+package: .
+import:
+- package: github.com/gin-gonic/gin
+  version: ^1.2.0
+- package: github.com/stretchr/testify
+  version: ^1.2.1
+  subpackages:
+  - assert
+- package: github.com/jinzhu/gorm
+  version: ^1.9.1
+  subpackages:
+  - dialects/postgres
