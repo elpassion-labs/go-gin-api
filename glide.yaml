@@ -10,3 +10,4 @@ import:
   version: ^1.9.1
   subpackages:
   - dialects/postgres
+- package: github.com/jinzhu/inflection

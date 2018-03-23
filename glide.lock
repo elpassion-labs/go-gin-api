@@ -1,5 +1,5 @@
-hash: c5968b4601d05beb9db370ddef7a9e3a670bef503a1bfd1ad091b32a15ed4afa
-updated: 2018-03-16T07:38:42.438019+01:00
+hash: bf51bd8b1fd6d2c6071e21b20a458e7c423e6f06acc889afcb56603ea5d7e512
+updated: 2018-03-16T09:26:57.399497+01:00
 imports:
 - name: github.com/gin-contrib/sse
   version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
@@ -16,6 +16,13 @@ imports:
   version: 6ed508ec6a4ecb3531899a69cbc746ccf65a4166
   subpackages:
   - dialects/postgres
+- name: github.com/jinzhu/inflection
+  version: 04140366298a54a039076d798123ffa108fff46c
+- name: github.com/lib/pq
+  version: 88edab0803230a3898347e77b474f8c1820a1f20
+  subpackages:
+  - hstore
+  - oid
 - name: github.com/mattn/go-isatty
   version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
 - name: github.com/stretchr/testify
