@@ -1,6 +1,8 @@
 hash: bf51bd8b1fd6d2c6071e21b20a458e7c423e6f06acc889afcb56603ea5d7e512
-updated: 2018-03-16T09:26:57.399497+01:00
+updated: 2018-04-23T22:09:26.942751205+02:00
 imports:
+- name: github.com/asaskevich/govalidator
+  version: 7d2e70ef918f16bd6455529af38304d6d025c952
 - name: github.com/gin-contrib/sse
   version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
 - name: github.com/gin-gonic/gin
@@ -16,15 +18,15 @@ imports:
   version: 6ed508ec6a4ecb3531899a69cbc746ccf65a4166
   subpackages:
   - dialects/postgres
+  - dialects/sqlite
 - name: github.com/jinzhu/inflection
   version: 04140366298a54a039076d798123ffa108fff46c
-- name: github.com/lib/pq
-  version: 88edab0803230a3898347e77b474f8c1820a1f20
-  subpackages:
-  - hstore
-  - oid
 - name: github.com/mattn/go-isatty
   version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
+- name: github.com/mattn/go-sqlite3
+  version: a72efd674f654961a11ac41aae72c0e43963fe6c
+- name: github.com/qor/validations
+  version: f364bca61b46bd48a5e32552a37758864fdf005d
 - name: github.com/stretchr/testify
   version: 12b6f73e6084dad08a7c6e575284b177ecafbc71
   subpackages:

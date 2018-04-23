@@ -12,3 +12,5 @@
 *.out
 
 /vendor
+
+test.db
