@@ -13,4 +13,5 @@
 
 /vendor
 
-test.db
+release.db
+**/test.db

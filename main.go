@@ -6,20 +6,11 @@ import (
 	"go-gin-api/routes"
 )
 
-func setupRouter() *gin.Engine {
-	router := gin.Default()
-
-	router.GET("/ping", routes.Ping)
-	router.POST("/api/trips", routes.CreateTrip)
-
-	return router
-}
-
 func main() {
 	gin.SetMode(gin.ReleaseMode)
 	db.Init()
 
-	router := setupRouter()
+	router := routes.SetupRouter()
 	router.Run()
 
 	defer db.CloseDB()

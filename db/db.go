@@ -2,6 +2,7 @@ package db
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
@@ -17,7 +18,9 @@ var err error
 // Init creates a connection to database and
 // automigrates any models
 func Init() {
-	db, _ = gorm.Open("sqlite3", fmt.Sprintf("%s.db", gin.Mode()))
+	os.Remove(dbName())
+
+	db, _ = gorm.Open("sqlite3", dbName())
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -33,4 +36,8 @@ func GetDB() *gorm.DB {
 
 func CloseDB() {
 	db.Close()
+}
+
+func dbName() string {
+	return fmt.Sprintf("%s.db", gin.Mode())
 }

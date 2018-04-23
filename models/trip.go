@@ -10,7 +10,6 @@ import (
 
 type Trip struct {
 	gorm.Model
-	ID                 uint      `json:"id"`
 	StartAddress       string    `json:"start_address"`
 	DestinationAddress string    `json:"destination_address"`
 	Price              uint      "json:price"

@@ -1,0 +1,10 @@
+languagel : go
+
+go:
+  - "1.10.x"
+
+install:
+  - go get -v github.com/Masterminds/glide
+  - glide install
+script:
+  - go test -v ./...
