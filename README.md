@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/elpassion-labs/go-gin-api.svg?branch=master)](https://travis-ci.org/elpassion-labs/go-gin-api)
+
 # Bikeramp written in GO
 
 ## Development
