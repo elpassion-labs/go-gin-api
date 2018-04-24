@@ -2,8 +2,8 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-gin-api/db"
-	"go-gin-api/models"
+	"github.com/go-gin-api/db"
+	"github.com/go-gin-api/models"
 )
 
 func CreateTrip(c *gin.Context) {

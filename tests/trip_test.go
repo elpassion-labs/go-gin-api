@@ -10,8 +10,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"go-gin-api/db"
-	"go-gin-api/routes"
+	"github.com/go-gin-api/db"
+	"github.com/go-gin-api/routes"
 )
 
 func TestCreateTripRouteValidation(t *testing.T) {

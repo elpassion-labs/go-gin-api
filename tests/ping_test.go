@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/gin-gonic/gin"
-	"go-gin-api/routes"
+	"github.com/go-gin-api/routes"
 )
 
 func TestPingRoute(t *testing.T) {

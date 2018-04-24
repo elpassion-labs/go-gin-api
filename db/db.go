@@ -9,7 +9,7 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 	"github.com/qor/validations"
 
-	"go-gin-api/models"
+	"github.com/go-gin-api/models"
 )
 
 var db *gorm.DB
